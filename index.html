@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./Libraries/bootstrap-3.2.0/css/bootstrap.css" />
+	<link rel="stylesheet" href="./Libraries/font-awesome-4.1.0/css/font-awesome.css" />
+</head>
+<body>
+
+	<!-- This is the container holding the graphic and the text -->
+	<div id= "pageContainer" class="container-fluid" style="">
+		<!-- This is the container holding the graphic -->
+		<div id="graphicContainer"></div>
+		<hr>
+		<!-- This is the container holding all of the  steps the attribute data-step refers to the step number -->
+		<!-- Steps ending in .0 are the main steps, steps ending in .1+ are the substeps -->
+		<div id= "textContainer">
+			<div data-step="1.1" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>1. Site Selection</p>
+				<p class='subStepTitle'>1.1 Community Meetings</p>
+				<div class='stepBody'>
+						<p>The first step in this project was to identify where to focus efforts in Sheboygan County. In early 2013, the project team met with the Sheboygan County planner and other key stakeholders to determine needs, opportunities, challenges, and potential data sources. Based on stakeholder input and previous feasibility analyses (Miller, Wagner &amp; Van Helden, 2009), the City of Plymouth, nested in the Mullet River subwatershed of the Sheboygan River Basin, was selected as the highest priority area of interest for this study. Through this stakeholder engagement, the project team was able to determine the two primary ecosystem services that would be evaluated in the multi-beneficial wetland functional assessment: 1) water quality protection/phosphorus capture and 2) flood abatement.</p>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="closeCircles(6,2)">Skip to 6.2</button>
+					<button type="button" class="btn btn-link" onclick="closeCircles(2,1)">Next</button>
+				</div>
+			</div>
+
+			<div data-step="2.1" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>2. Data Collection</p>
+				<p class='subStepTitle'>2.1 Literature Review</p>
+				<div class='stepBody'>
+					<p>To help inform what decision support tool to use in the analysis, the team conducted a comprehensive literature and case study review. All of the information collected during the review process was entered into a tool matrix decision-making framework. The tool matrix concept was derived from the Coastal-Marine Ecosystem-Based Management Tools Network and NatureServe (<a href="http://greatlakesresilience.org/library/reports/tools-coastal-climate-adaptation-planning-guide-selecting-tools-assist-ecosystem">Carr et al. 2013</a>). The team was then able to determine which decision support tool would best meet the project&#39;s goals.</p>
+
+					<p>The team also referenced several existing assessments conducted in the region to inform site-selection metrics and criteria (Bernthal et al. 2008; Miller et al. 2009; Miller, Bernthal, Wagner, Grimm, Casper, and Kline, 2012).  These references were used to inform the development of the Wetland Multi-Benefit Functional Assessment Matrix (<a href='./img/doc_casestudy_sheboygan_WetlandMultiBenfitFunctionAssessmentMatrix.pdf'>Figure 3, PDF</a>) which guided the analysis for this project.  One assessment of particular importance was a product from the 2009 assessment, a &quot;Potentially Restorable Wetlands&quot; dataset (PRW) which estimated nearly 3,300 acres of potentially restorable wetlands in the study area.  This dataset was used as the baseline on which all other analyses were completed during this study (<a href='./img/doc_casestudy_sheboygan_PotentiallyRestorableWetlandsDataset'>Figure 2, PDF</a>).</p>
+
+					<div class="wrappedParagraph">
+						<span class='pull-right'>
+							<div class="thumbnail">
+						    	<img src="./img/img_casestudy_sheboygan_PotentiallyRestorableWetlandsDataset.jpg">
+						      	<div class="caption">
+						        	<p>Figure 2. Potentially Restorable Wetlands Map, Courtesy of Laura Flessner, TNC &amp; ASFPM (<a href='./img/doc_casestudy_sheboygan_PotentiallyRestorableWetlandsDataset.pdf'>PDF</a>)</p>
+						      	</div>
+						    </div>
+						</span>
+						<p>The 2009 PRW dataset was selected as the focal unit for this study for several key reasons: 1) the 2009 assessment focused on existing wetlands and the original PRW layer was not prioritized.  Instead, it was simply designated as restorable wetlands or destroyed wetlands that are under a &quot;restorable&quot; land use (e.g., agriculture, not developed areas) with hydric soils.  2) this dataset already incorporated ag land which is a known contributor of phosphorus in the Mullet and was identified by the stakeholders as a key land use for nutrient capture 3) prioritizing the PRW would add value to the 2009 assessment that was completed on existing wetlands as these two datasets could be combined to help inform restoration opportunities on a broader scale. </p>
+					</div>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(1,1)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="forceTextToggle('2.2')">Next</button>
+				</div>
+			</div>
+
+			<div data-step="2.2" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>2. Data Collection</p>
+				<p class='subStepTitle'>2.2 Prioritization Criteria Selected</p>
+				<div class='stepBody'>
+					<div class="wrappedParagraph">
+						<span class='pull-left'>
+							<div class="thumbnail">
+						    	<a href="./img/doc_casestudy_sheboygan_WetlandMultiBenfitFunctionAssessmentMatrix.pdf">
+						    		<img src="./img/img_casestudy_sheboygan_WetlandMultiBenfitFunctionAssessmentMatrix.jpg">
+						    	</a>
+						    </div>
+						</span>
+						<p>Also complied during the data collection process was a matrix of criteria (<a href="./img/doc_casestudy_sheboygan_WetlandMultiBenfitFunctionAssessmentMatrix.pdf">Figure 3, PDF</a>) that were ultimately used to prioritize the PRWs identified in the 2009 dataset (<a href="./img/doc_casestudy_sheboygan_PotentiallyRestorableWetlandsDataset.pdf">Figure 2, PDF</a>). These criteria were measurable parameters related to the key services (1. Flood Abatement and 2. Phosphorous Reduction/Water Quality) identified by stakeholders during community meetings, and were used to score the level at which each PRW could perform each service (low, medium, high, or exceptional). After the functional scores for each service were tabulated, the size of each PRW site was factored in as a multiplier based on literature that supports that wetland size is directly correlated with the magnitudes of these services.  </p>
+					</div>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(2,1)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="closeCircles(3)">Next</button>
+				</div>
+			</div>
+
+			<div data-step="3.1" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>3. Decision Support Tool Selection</p>
+				<p class='subStepTitle'>3.1 Evaluate Tools</p>
+				<div class='stepBody'>
+					<p class='subStepHeading'>A. OpenNSPECT</p>
+					<div class="wrappedParagraph">
+						<span class='pull-right'>
+							<div class="thumbnail">
+						    	<a href="./img/doc_casestudy_sheboygan_WetlandMultiBenfitFunctionAssessmentMatrix.pdf">
+						    		<img src="./img/img_casestudy_sheboygan_DecisionSupportToolMatrix.jpg">
+						    	</a>
+						      	<div class="caption">
+						        	<p>Figure 4. Decision Support Tool Matrix (<a href='./img/doc_casestudy_sheboygan_DecisionSupportToolMatrix.pdf'>PDF</a>)</p>
+						      	</div>
+						    </div>
+						</span>
+						<p>After criteria were identified for the functional assessment, the project team developed a comparative matrix (<a href='./img/doc_casestudy_sheboygan_DecisionSupportToolMatrix.pdf'>Figure 4, PDF</a>) of various decision support tools that measure the impacts of land use changes on pollutants and runoff. Ultimately, runoff analysis was performed using OpenNSPECT, an open-source Nonpoint Source Pollution and Erosion Comparison Tool (NSPECT).  NSPECT was chosen because it is freely downloadable, does not require ESRI ArcGIS, is broadly applicable at multiple scales, and has a comprehensive user community.  </p>
+					</div>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(2,2)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="closeCircles(4)">Next</button>
+				</div>
+			</div>
+
+			<div data-step="4.1" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>4. Data Analysis</p>
+				<p class='subStepTitle'>4.1 OpenNSPECT Runoff Analysis</p>
+				<div class='stepBody'>
+					<p>NSPECT uses a combination of elevation, land cover, soil, and precipitation data to calculate flow direction and accumulation in order to estimate nutrient loads and runoff volume (<a href='.img/doc_casestudy_sheboygan_OPENspectDatasets.pdf'>Figure 5, PDF</a>). NSPECT is a GIS-based tool and in this case, NSPECT was used to investigate surface water runoff volumes and phosphorus loads from different land use scenarios to allow for the comparison of water quality impacts across &quot;business as usual&quot; and wetland restoration futures.  The following section documents some of the critical calculations performed using NSPECT, what data that was used to complete these analyses, and where those data can be found. For additional guidance on to use the OpenNSPECT model please reference the <a href="http://www.csc.noaa.gov/digitalcoast/_/pdf/opennspect-users-manual-v1-1.pdf">user manual</a>&hellip;</p>
+
+					<div class="thumbnail">
+						<table class="table table-bordered">
+							<caption class="text-left subStepHeading">A. Enter Study Area Parameters:</caption>
+							<thead>
+								<tr class="active">
+									<th colspan="2">Figure 5. OpenNSPECT Input Datasets (<a href='./img/doc_casestudy_sheboygan_OPENspectDatasets.pdf'>click to view the full data set</a>)</th>
+								</tr>
+								<tr class="active">
+									<th>Spatial Dataset</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Mullet subwatershed basins</td>
+									<td><a href="http://dnr.wi.gov/maps/gis/geolibrary.html">WI DNR</a></td>
+								</tr>
+								<tr>
+									<td><a href="http://data.geocomm.com/dem/">Digital Elevation Model (DEM)</a></td>
+									<td><a href="http://ned.usgs.gov/">USGS National Elevation Database</a></td>
+								</tr>
+								<tr>
+									<td><a href="http://water.usgs.gov/GIS/huc.html">HUC 14 Catchments</a></td>
+									<td><a hret="http://www.horizon-systems.com/NHDPlus/index.php">NHDPlus Database</a></td>
+								</tr>
+								<tr>
+									<td>Potentially Restorable Wetlands (PRW)</td>
+									<td>John Wagner, TNC</td>
+								</tr>
+								<tr>
+									<td>30 year climatological average precipitation</td>
+									<td><a href="http://www.prism.oregonstate.edu/normals/">PRISM Model</a> or <a href="http://www.ncdc.noaa.gov/">NOAA - National Climatic Data Center Database</a></td>
+								</tr>
+								<tr>
+									<td>Land Use, or Land Cover</td>
+									<td><a href='http://greatlakesresilience.org/maps-tools-data/data/coastal-change-analysis-program-c-cap-regional-land-cover-data'>NOAA CCAP 2010</a> updated with local crop type polygons provided by John Nelson with TNC, WI</td>
+								</tr>
+								<tr>
+									<td>Underlying Soil Type</td>
+									<td>NRCS SSURGO Database or <a href="http://greatlakesresilience.org/maps-tools-data/maps/web-soil-survey">NRCS Web Soil Survey</a></td>
+								</tr>
+								<tr>
+									<td>K-Factor Grid</td>
+									<td><a href="http://datagateway.nrcs.usda.gov/GDGOrder.aspx">NCRS SSURGO Database</a>, &quot;kfact&quot; attribute</td>
+								</tr>
+								<tr>
+									<td>NRCS Hydrologic Soils Group (A, B, C, D)</td>
+									<td><a href="http://datagateway.nrcs.usda.gov/GDGOrder.aspx">NCRS SSURGO Database</a>, &quot;hydgrp&quot; attribute</td>
+								</tr>
+								<tr class="active">
+									<th>Tabular Dataset</th>
+									<th>Source</th>
+								</tr>
+								<tr>
+									<td>Runoff Curve Number per land use</td>
+									<td><a href="http://greatlakesresilience.org/library/reports/urban-hydrology-small-watersheds">NRCS Urban Hydrology for Small Watersheds</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p class="subStepHeading">B. Determine Precipitation Parameters and Baseline Run-off Scenario: </p>
+					<p>Precipitation data is used in NSPECT to calculate the amount of rain that must fall in order to produce run-off, as well as the number of days in any given year that run-off will be produced (<a href="./img/doc_casestudy_sheboygan_OPENspectDatasets.pdf">Figure 5, PDF</a>).</p>
+
+					<p class="italicizedSubStepHeading">Calculations: </p>
+					<p>To calculate this &quot;baseline run-off scenario&quot;, Sheboygan&#39;s average annual precipitation for the last thirty years (also known as a 30-year normal dataset) was input in the NSPECT model. Using the 30-year normals, along with the previously mention data on soil type, land cover, slope, etc. </p>
+
+					<p class="subStepHeading">C. Determine Runoff Parameters</p>
+					<p>NSPECT models total runoff, sediment and pollutant loads based on land cover type, a soil erodability factor (also known as the k-factor), and the previously mentioned rainfall factor (<a href="./img/doc_casestudy_sheboygan_OPENspectDatasets.pdf">Figure 5, PDF</a>).</p>
+
+					<p class="italicizedSubStepHeading">Calculations: </p>
+					<ol>
+						<li>To calculate total runoff, sediment, and pollutant loads, NSPECT provides default runoff curve numbers for each land cover class for Coastal Change Analysis Program (C-CAP) datasets. While running the model with these default values can still yield useful results, some of the original C-CAP land cover classes and runoff curve values were modified to further calibrate the model to the study area.  Runoff curve number values and USLE cover factor values were used in the N-SPECT runoff and phosphorus yield calculations for this project.  Curve number values and Cover factors for different C-CAP classes and soils groups were based on values recommended by NRCS Urban Hydrology for Small Watersheds.</li>
+						<li>Once the data has been calibrated, users must decide between the two primary types of runoff and pollution calculations provided by OpenNSPECT; local effects and accumulated effects.  The Local effects method removes the influence of upstream cells from the analysis and estimates the pollutants or runoff that are originating from each cell.  Whereas the accumulated effects are estimates of the pollutant load delivered to or through a cell.  The local effects method was chosen for this project because these outputs make it possible to identify areas within the study area that are potentially high contributors of nutrients and/or runoff and should therefore be prioritized as places that might benefit the most from a wetland&#39;s nutrient capture and flood abatement services.</li>
+					</ol>
+
+					<p class="subStepHeading">D. Calculate NSPECT Output Datasets</p>
+					<p>Output datasets that result from running an OpenNSPECT analysis for local effects included:
+						<ol>
+							<li>Local runoff grid (liters). This grid displays the volume of runoff from each cell in the analysis area.</li>
+							<li>Local pollutant grid (milligrams). This grid displays the amount (mass) of the specified pollutant that is coming off of each cell in the analysis area.</li>
+							<li>Local sediment load grid (milligrams). This grid displays the amount of sediment (mass) that is eroding from each cell in the analysis area.</li>
+						</ol>
+					</p>
+					<p>For a more intuitive way to view the NSPECT output datasets, the local effects data were aggregated by HUC 14 catchment and normalized by the amount of acres within each.  This was accomplished by performing Zonal Statstics using the NSPECT rasters as the input and the HUC 14 catchments polygons as the zones.  The result is the amount of runoff expected from each catchment ranked from lowest to highest.</p>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(3,1)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="forceTextToggle('4.2')">Next</button>
+				</div>
+			</div>
+
+			<div data-step="4.2" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>4. Data Analysis</p>
+				<p class='subStepTitle'>4.2 Hot Spot Analysis</p>
+				<div class='stepBody'>
+					<p class="italicizedSubStepHeading">Rationale:</p>
+					<div class="wrappedParagraph">
+						<span class='pull-right'>
+							<div class="thumbnail">
+						    	<img src="./img/img_casestudy_sheboygan_HotSpotAnalysis.jpg">
+						      	<div class="caption">
+						        	<p>Figure 6. Hot Spot Analysis Results</p>
+						      	</div>
+						    </div>
+						</span>
+						<p>Although preliminary cluster patterns can often be seen in raw outputs from NSPECT, they are not necessarily statistically significant.  Applying the hot spot analysis tool isolates only statistically significant spatial clusters of high values (hot spots) and low values (cold spots).  In this study, only the significantly high values were included in the functional assessment (Figure 6).  Please note, in order to run a Hot Spot Analysis, the prepriatory version of the NSPECT model must be used</p>
+					</div>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(4,1)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="forceTextToggle('4.3')">Next</button>
+				</div>
+			</div>
+
+			<div data-step="4.3" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>4. Data Analysis</p>
+				<p class='subStepTitle'>4.3 Potentially Restorable Wetland Prioritization: </p>
+				<div class='stepBody'>
+					<p>The final step in the data analysis process was the prioritization of the potentailly restorable wetland sites that the previously mention Hot Spot Analysis found to be statisitcally significant. To prioritize these PRWs, the functional assessment matrix was applied (<a href="./img/doc_casestudy_sheboygan_WetlandMultiBenfitFunctionAssessmentMatrix.pdf">Figure 3, PDF</a>).</p>
+					<p class="italicizedSubStepHeading">Calculations: </p>
+
+					
+					<p class="subStepHeading">A. Evaluate Whether Potentially Restorable Wetlands Meet Criteria for Multiple Benefits</p>
+					<p>To meet the objectives of the stakeholders, priority should be given to PRWs that could provide multiple services, such as water quality protection and flood abatement. Priority should also be given to sites that have the potential to provide either or both of these services at exceptional to high levels.</p>
+					<ol>
+						<li>Assess wetlands using methods described in Wetland Multi-Benefit Functional Assessment Matrix (Figure 3)</li>
+						<li>Calculate a score for each service within each wetland polygon.
+							<ol type="a">
+								<li>For each wetland site, divide the number of criteria that have been met for each service by the total possible number of criteria with scores ranging from 0.0-1.0. For example, if assessments reveal that five of the six criteria have been met for a given wetland, then the probability that the wetland could perform the flood abatement service would be 5 &divide; 6 = 0.83.</li>
+							</ol>
+						</li>
+						<li>Multiply scores for services by a size factor. For flood abatement and water quality protection, the magnitude of service is directly correlated to wetland area. Size factors used in this study were determined by plotting a histogram of the acreage of all PRWs to get relative size breaks. Scores ranged from 0.0-2.0 depending on the previously calculated service score (Part A, Step 2).
+							<ol type="a">
+								<li>PRW &lt;= 2 acres, factor = 1</li>
+								<li>PRW &gt; 2 acres AND &lt;= 10 ac, factor = 1.5</li>
+								<li>PRW &gt; 10 acres, factor = 2</li>
+							</ol>
+						</li>
+						<li>Determine level of function for each service, for each wetland unit relative to the other.
+							<ol type="a">
+								<li>1st quartile = exceptional</li>
+								<li>2nd quartile = high</li>
+								<li>3rd &amp; 4th quartile = moderate to low</li>
+							</ol>
+						</li>
+						<li>Generate a map of priority wetlands that perform each service at &quot;exceptional&quot; or &quot;high&quot; levels.</li>
+					</ol>
+
+					<p class="subStepHeading">B. Prioritizing sites by the total number of services performed</p>
+					<span class='pull-right'>
+								<div class="thumbnail">
+							    	<img src="./img/img_casestudy_sheboygan_PRWSitesThatProvideHighLevelServices.jpg">
+							      	<div class="caption">
+							        	<p>Figure 7. Map of Priority Wetlands with High Potential to Provide Multiple Benefits (<a href="./img/doc_casestudy_sheboygan_PRWSitesThatProvideHighLevelServices.pdf">PDF</a>) </p>
+							      	</div>
+							    </div>
+							</span>
+					<ol>
+						<li>For each wetland unit, determine the total number of services that are performed at &quot;exceptional&quot; or &quot;high&quot; levels. For example, a site that scores &quot;high&quot; for one service and &quot;exceptional&quot; for another would receive a score of 2.</li>
+						<li>Generate a map of priority wetlands that could provide multiple benefits at exceptional and/or high levels, color-ramped based on the number of services performed (<a href="./img/doc_casestudy_sheboygan_PRWSitesThatProvideHighLevelServices">Figure 7, PDF</a>).</li>
+					</ol>
+					
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(4,2)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="closeCircles(5)">Next</button>
+				</div>
+			</div>
+
+			<div data-step="5.1" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>5. Restoration Impact Analysis</p>
+				<p class='subStepTitle'>5.1 Investigate Potential Impacts from Recommended PRW Restoration Scenarios</p>
+				<div class='stepBody'>
+					<p>Following the functional assessment, the PRWs that were identified as having the potential to perform both water quality protection and flood abatement services at high or exceptional levels were incorporated into NSPECT as a &quot;what-if&quot; management scenario to estimate the potential impacts of restoration. This management scenario represented a &quot;best case&quot; situation based on the assumption that all multi-benefit PRW sites were restored to fully functioning wetlands, thereby changing the existing land use and associated curve numbers.  Results from the PRW management scenario were then compared to the base scenario to determine the relative impact in terms of surface water and phosphorus runoff reduction.</p>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(4,3)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="closeCircles(6)">Next</button>
+				</div>
+			</div>
+
+			<div data-step="6.1" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>6. Ancillary Analysis</p>
+				<p class='subStepTitle'>6.1 Parcel Prioritization</p>
+				<div class='stepBody'>
+					<div class="wrappedParagraph">
+						<span class='pull-right'>
+							<div class="thumbnail">
+						    	<img src="./img/img_casestudy_sheboygan_PriorityParcelsForMultipleBenefitWetlandRestoration.jpg">
+						      	<div class="caption">
+						        	<p>Figure 8. Priority Parcels for Multi-Benefit Wetland Restoration (<a href="./img/doc_casestudy_sheboygan_PriorityParcelsForMultipleBenefitWetlandRestoration.pdf">PDF</a>)</p>
+						      	</div>
+						    </div>
+						</span>
+						<p>An ancillary analysis was performed to identify parcels in Sheboygan County that intersect with PRW that have the potential to provide both flood abatement and water quality protection services at high or exceptional levels.  Highlighting these parcels can help to target landowners that should be engaged as the siting of wetland restoration projects in the study area progress (<a href="./img/doc_casestudy_sheboygan_PriorityParcelsForMultipleBenefitWetlandRestoration.pdf">Figure 8, PDF</a>).</p>
+					</div>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(5,1)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="forceTextToggle('6.2')">Next</button>
+				</div>
+			</div>
+
+			<div data-step="6.2" name="stepText" style="display:none;">
+				<p class= 'stepTitle'>6. Ancillary Analysis</p>
+				<p class='subStepTitle'>6.2 Future Development</p>
+				<div class="stepBody">
+					<div class="wrappedParagraph">
+						<span class='pull-right'>
+							<div class="thumbnail">
+						    	<img src="./img/img_casestudy_sheboygan_PotentialDevelopmentPressuresOnPRW.jpg">
+						      	<div class="caption">
+						        	<p>Figure 9. Map of Potential Development Pressures on Prioritized PRWs (<a href="./img/doc_casestudy_sheboygan_PotentialDevelopmentPressuresOnPRW.pdf">PDF</a>)</p>
+						      	</div>
+						    </div>
+						</span>
+						<p>This analysis intended to evaluate potential future development pressure on those most valuable PRW found to have potential to provide multiple benefits.  This analysis used the City of Plymouth&#39;s 20 year development growth projections to explicitly determine areas where future development pressure may inhibit significant PRW sites.  It was determined that of the 1,017 total acres of the multi-beneficial PRW identified through this study, 256 acres are located within Plymouth.  Of that, 209 acres (or almost 82%) are potentially threatened by future development within the next two decades.  Visualizing this relationship can help stakeholders to start considering opportunities to avoid growth to protect valuable PRW (<a href="./img/doc_casestudy_sheboygan_PotentialDevelopmentPressuresOnPRW.pdf">Figure 9, PDF</a>).</p>
+					</div>
+				</div>
+				<div class="stepFooter">
+					<button type="button" class="btn btn-link" onclick="skipToStep(6,1)">Previous</button>
+					<button type="button" class="btn btn-link" onclick="skipToStep(1,1)">Skip to the 1.1</button>
+				</div>
+			</div>
+
+		</div><!-- End of Text Container -->
+	</div><!-- End of Page Container -->
+</body>
+
+
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="./Libraries/bootstrap-3.2.0/js/bootstrap.js"></script>
+	<script src="./js/proto.js"></script>
+	<script src="./js/data.js"></script>
+	<script src="./js/main.js"></script>
+</html>
